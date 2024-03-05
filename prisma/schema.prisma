@@ -13,3 +13,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Pessoa {
+  pessoaID Int    @id @default(autoincrement())
+  nome     String
+  email    String
+  telefone String
+}
